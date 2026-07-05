@@ -124,12 +124,12 @@ web.facebook.com,www.facebook.com##+js(trusted-prevent-dom-bypass, Element.proto
 
 ! https://github.com/uBlockOrigin/uAssets/issues/24745 - https://voe.sx/e/2z9smej3tebe
 ! VOE sites
-||imasdk.googleapis.com/js/sdkloader/ima3.js$script,3p,redirect=google-ima.js,domain=jennifereconomicgive.com,important
-jennifereconomicgive.com##+js(nowoif)
-jennifereconomicgive.com##+js(set, console.clear, undefined)
-jennifereconomicgive.com##+js(acs, globalThis, break;case)
-jennifereconomicgive.com##+js(acs, WebAssembly, atob)
-||jennifereconomicgive.com^$badfilter
+||imasdk.googleapis.com/js/sdkloader/ima3.js$script,3p,redirect=google-ima.js,domain=pamelachangemission.com,important
+pamelachangemission.com##+js(nowoif)
+pamelachangemission.com##+js(set, console.clear, undefined)
+pamelachangemission.com##+js(acs, globalThis, break;case)
+pamelachangemission.com##+js(acs, WebAssembly, atob)
+||pamelachangemission.com^$badfilter
 
 ! next-episode .net
 !next-episode.net##+js(rmnt, script, '/[\s\S]{0,}head[\s\S]{1900,}/')
@@ -447,7 +447,10 @@ historicaerials.com##+js(trusted-create-html, #historicaerials_g_160x600_Right, 
 @@||historicaerials.com^$ghide
 
 ! https://github.com/uBlockOrigin/uAssets/issues/31585
-magma.com##+js(trusted-set, Object.prototype.adsStrategy, 'json:{"tag":"","phase":0,"permaProvider":0,"tempoProvider":0,"buckets":[],"comment":"no-user","rotationPaused":true}', as, function)
+magma.com##+js(set, Object.prototype.hasRightPartnership, falseFunc)
+magma.com##+js(set, Object.prototype.hasLeftPartnership, falseFunc)
+magma.com##+js(set, Object.prototype.hasTopPartnership, falseFunc)
+magma.com##+js(set, Object.prototype.hasBottomPartnership, falseFunc)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/31775
 embedtv.best##+js(rpnt, script, (popupLoaded), (true))
@@ -489,8 +492,8 @@ openchat-review.me##+js(set-local-storage-item, BLOCKED_FLAG_KEY, $remove$)
 openchat-review.me##+js(aost, document.querySelectorAll, security.js)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/33280
-streamcash.to##+js(trusted-replace-argument, document.querySelector, 0, '', condition, /^\[id\=\"[0-9a-z]{10}\"\]$/)
-streamcash.to##+js(aost, decodeURIComponent, /[a-z]{3}/)
+streamcash.to##+js(rmnt, script, /\${''}|body:JSON\.stringify/)
+streamcash.to##div[id]:has(button[onclick*="location.reload()"])
 
 ! https://github.com/uBlockOrigin/uAssets/issues/33449
 akirabox.com,akirabox.to,bowfile.com,buzzheavier.com,bzzhr.co,bzzhr.to,datavaults.co,fuckingfast.*,multiup.io,rootz.so,usersdrive.com,vik1ngfile.site,zpaste.net#@#+js(set, Document.prototype.createElement.call, noopFunc)

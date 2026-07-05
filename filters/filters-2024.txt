@@ -2847,16 +2847,9 @@ decompiler.com##+js(set, HTMLImageElement.prototype.naturalWidth, 240)
 decompiler.com##+js(set, createImageBitmap, undefined)
 
 ! ytlarge detection
-@@||ytlarge.com^$ghide
-@@||googlesyndication.com^$script,xhr,domain=ytlarge.com
-@@||fundingchoicesmessages.google.com^$script,xhr,domain=ytlarge.com
-@@||g.doubleclick.net/pagead/ads?$frame,domain=ytlarge.com
-||googleads.g.doubleclick.net/pagead/ads$frame,removeparam=/^(?:correlator|f[cr-w]|p[e-sv]|u_|ga_|url|dt|adk)/,domain=ytlarge.com
-@@*$script,frame,xhr,1p,domain=ytlarge.com
 .com/ad/$~image,third-party,domain=~mediaplex.com|~warpwire.com|~wsj.com,badfilter
 .com/adz/$badfilter
 ytlarge.com##.overflow-hidden.items-center.flex-col:has([id^="ezoic-pub-ad-"])
-ytlarge.com##ins.adsbygoogle[data-ad-slot]
 *.gif$domain=ytlarge.com
 
 ! https://www.reddit.com/r/uBlockOrigin/comments/1ej8gmq/help_with_popup_ad/
@@ -3296,6 +3289,7 @@ app.involve.asia#@#.ads-banner
 redgifs.com##+js(json-prune, gifs.[-].cta.link)
 ! https://github.com/uBlockOrigin/uAssets/issues/30774
 redgifs.com##+js(json-prune, boosted_gifs)
+||api.redgifs.com/v*/feeds/modules
 
 ! https://www.reddit.com/r/uBlockOrigin/comments/1fpr48s/adblock_detected_on_smailpro/
 smailpro.com##+js(set, adsbygoogle_ama_fc_has_run, true)
@@ -3482,9 +3476,6 @@ sdna.gr###disqus_thread:style(display: block !important;)
 ! https://github.com/uBlockOrigin/uAssets/issues/25725
 @@||tempmail.ninja^$ghide
 tempmail.ninja##aside[class] > div.mx-auto:has(> ins.adsbygoogle)
-! tempmail.ninja##+js(trusted-set-attr, ins.adsbygoogle, data-ad-status, filled)
-! tempmail.ninja##+js(trusted-create-html, ins.adsbygoogle, <div><iframe></iframe></div>)
-! tempmail.ninja##+js(nostif, ads_not_loaded)
 tempmail.ninja##+js(trusted-set-attr, ins.adsbygoogle, data-ad-status, unfill-optimize)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/25731
